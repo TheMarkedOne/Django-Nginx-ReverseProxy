@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+    zura:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "8000:8000"
+    nginx:
+        build:
+            context: .
+            dockerfile: ./nginx/Dockerfile
+        ports:
+            - "80:80"
