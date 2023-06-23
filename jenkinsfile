@@ -8,7 +8,7 @@ pipeline {
             }
         }
         
-        stage('---TESTING---') {
+        stage('--TESTING--') {
             steps {
                 echo "TESTING !!!"
             }
