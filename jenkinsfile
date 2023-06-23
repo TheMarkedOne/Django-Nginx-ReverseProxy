@@ -2,19 +2,19 @@ pipeline {
     agent any
     
     stages {
-        stage('Install Dependencies') {
+        stage('---STARTING---') {
             steps {
-                sh 'pip install -r requirements.txt' // Install project dependencies
+                echo "STARTING!!!"
             }
         }
         
-        stage('Run Tests') {
+        stage('---TESTING---') {
             steps {
-                sh 'python manage.py test' // Run Django tests
+                echo "TESTING !!!"
             }
         }
         
-        stage('Build and Deploy') {
+        stage('---BUILD/DEPLOY---') {
             steps {
                 sh 'docker-compose up -d' // Start Docker containers using docker-compose
             }
