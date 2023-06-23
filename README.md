@@ -1,1 +1,1 @@
-# Django-Nginx-ReverseProxy
+# Django-Nginx
